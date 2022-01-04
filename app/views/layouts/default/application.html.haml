@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= current_account.name
+    = csrf_meta_tags
+  %body
+    = render 'default/shared/navigation'
+    = render 'default/shared/retreatsIntro'
+    = render 'default/shared/retreatsSpacesSection'
+    = render 'default/shared/retreatsAccommodation'
+    = render 'default/shared/retreatsCommonServices'
+    = yield
+    .text-center= current_account.content.html :footer
