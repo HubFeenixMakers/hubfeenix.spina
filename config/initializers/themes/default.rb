@@ -21,6 +21,10 @@ Spina::Theme.register do |theme|
   # - Option
   # - Repeater
   theme.parts = [{
+    name: "Intro",
+    title: "intro",
+    part_type: "Spina::Parts::Intro",
+  },{
     name: "Title",
     title: "title",
     part_type: "Spina::Parts::Line",
@@ -153,6 +157,7 @@ Spina::Theme.register do |theme|
     description: "Studios page",
     usage: "Use for your content",
     parts: %w(
+		Intro
 		Title 
 		Description  
 		Image

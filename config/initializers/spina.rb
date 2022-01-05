@@ -75,4 +75,5 @@ Spina.configure do |config|
   # %i( bulgarian cyrillic danish german greek latin macedonian norwegian 
   #     romanian russian serbian spanish swedish ukrainian vietnamese)
   # config.transliterations = %i(latin)
+  Spina::Part.register(Spina::Parts::Intro)
 end
