@@ -88,35 +88,10 @@ Spina::Theme.register do |theme|
     name: "Image",
     title: "Image",
     part_type: "Spina::Parts::Image",
-  }, {
-    name: "PageSection",
-    title: "Page section",
-    parts: %w(Title Subtitle Description Image),
-	part_type: "Spina::Parts::Text",
-
-  }, {
+  },  {
     name: "SingleCard",
     title: "Card",
     parts: %w(Title Description Size Image),
-    part_type: "Spina::Parts::Repeater",
-  }, {
-    name: "SingleCard_2",
-    title: "Card",
-    parts: %w(Title Description Size Image),
-    part_type: "Spina::Parts::Repeater",
-  }, {
-    name: "SectionHead",
-    title: "Section Header",
-    parts: %w(Title Subtitle),
-  }, {
-    name: "Accommodation",
-    title: "Accommodation",
-    parts: %w(Title Description Image),
-    part_type: "Spina::Parts::Repeater",
-  },  {
-    name: "CommonServices",
-    title: "Common Services",
-    parts: %w(Title Description Image),
     part_type: "Spina::Parts::Repeater",
   }, {
     name: "footer",

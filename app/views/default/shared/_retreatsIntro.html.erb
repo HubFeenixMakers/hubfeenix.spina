@@ -1,0 +1,22 @@
+<div class="pageSection text-center flex flex-row">
+  <div class="image h-fit w-full">
+    <%= content.image_tag :Image %>
+  </div>
+  <div class="m-24">
+    <h1 class="text-2xl font-bold">
+      <%= content.html :Title %>
+    </h1>
+    <div class="font-serif text-2xl">
+      <%= content.html :Subtitle %>
+    </div>
+    <div class="font-mono">
+      <%= content.html :Subtitle %>
+    </div>
+	<div class="font-sans">
+      <%= content.html :Subtitle %>
+    </div>
+    <div class="font-sans">
+      <%= content.html :Description %>
+    </div>
+  </div>
+</div>
