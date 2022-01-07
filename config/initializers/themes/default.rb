@@ -49,6 +49,11 @@ Spina::Theme.register do |theme|
     title: "Accommodation subtitle",
     part_type: "Spina::Parts::Text",
   }, {
+    name: "Accommodation",
+    title: "Accommodation Card",
+    parts: %w(Title Description Size Image),
+    part_type: "Spina::Parts::Repeater",
+  }, {
     name: "CommonServicesTitle",
     title: "CommonServices title",
     part_type: "Spina::Parts::Line",
@@ -57,6 +62,11 @@ Spina::Theme.register do |theme|
     title: "CommonServices subtitle",
     part_type: "Spina::Parts::Text",
   }, {
+    name: "CommonServices",
+    title: "CommonServices Card",
+    parts: %w(Title Description Size Image),
+    part_type: "Spina::Parts::Repeater",
+  },{
     name: "StudiosTitle",
     title: "Studios title",
     part_type: "Spina::Parts::Line",
@@ -72,7 +82,12 @@ Spina::Theme.register do |theme|
     name: "IncludedSubtitle",
     title: "Included subtitlte",
     part_type: "Spina::Parts::Text",
-  },{
+  }, {
+    name: "Included",
+    title: "Included Card",
+    parts: %w(Title Description Size Image),
+    part_type: "Spina::Parts::Repeater",
+  }, {
     name: "TextArea",
     title: "text",
     part_type: "Spina::Parts::Text",
@@ -88,7 +103,7 @@ Spina::Theme.register do |theme|
     name: "Image",
     title: "Image",
     part_type: "Spina::Parts::Image",
-  },  {
+  }, {
     name: "SingleCard",
     title: "Card",
     parts: %w(Title Description Size Image),
@@ -105,7 +120,7 @@ Spina::Theme.register do |theme|
   theme.view_templates = [{
     name: "homepage",
     title: "Homepage",
-    parts: %w(TextArea PageSection),
+    parts: %w(TextArea Image),
   }, {
     name: "show",
     title: "Retreats",
@@ -141,7 +156,7 @@ Spina::Theme.register do |theme|
 		SingleCard
 		IncludedTitle
 		IncludedSubtitle
-		SingleCard_2
+		Included
 
 	),
   }, {
