@@ -147,7 +147,7 @@ Spina::Theme.register do |theme|
     description: "Studios page",
     usage: "Use for your content",
     parts: %w(
-		Intro
+		
 		Title 
 		Description  
 		Image
