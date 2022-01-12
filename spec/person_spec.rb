@@ -1,5 +1,5 @@
 require 'rails_helper'
-require '../person'
+require './person'
 
 RSpec.describe Person, type: :feature do
 	describe '#first_name' do
